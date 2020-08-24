@@ -1,0 +1,136 @@
+.casing{
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+a{
+    color: #fff;
+}
+
+
+
+.main_header{
+    width: 100%;
+    min-height: 240px;
+    background: url('img/bg.jpg') center center no-repeat;
+    background-size: cover;
+    filter: grayscale(50%);
+}
+
+.main_header_title{
+    padding: 110px 15px 0;
+
+    color: #fff;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+
+
+.main_header_title a{
+    text-shadow:        2px 4px 3px rgba(0,0,0,0.8);
+}
+
+.main_news{
+    padding: 40px 0 0;
+}
+
+.main_news_title{
+    position: relative;
+    padding-left: 30px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.main_news_title::before{
+    content: '';
+    display: block;
+    width: 50px;
+    height:  50px;
+    border: 5px solid #f0c537;
+    border-radius: 50%;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+
+    position: absolute;
+    left: 0;
+    top: -5px;
+}
+
+.main_news_subtitle{
+    margin-bottom: 40px;
+    padding-left: 30px;
+    font-size: 15px;
+    color: #141213;
+}
+
+.item{
+    min-height:  240px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.item_img{
+    max-width: 400px;
+    display: inline-block;
+    float: left;
+    height: auto;
+    width: 100%;
+}
+
+.item .content{
+    display: inline-block;
+    width: 50%;
+    margin-left: 30px;
+}
+
+.content_title{
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 1050px){
+    .item{
+        padding: 0px;
+        text-align: center;
+    }
+    .item_img{
+        float: none;
+    }
+    .item .content{
+        width: 100%;
+        max-width: 400px;
+        margin-left: 0;
+        text-align: left;
+    }
+    .content_date{
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .item .content{
+        width: 100%;
+    }
+
+    .main_news_title, .main_news_subtitle{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .main_news_title{
+        font-size: 25px;
+    }
+    .main_news_title::before{
+        width: 30px;
+        height: 30px;
+        left: -15px;
+    }
+
+}

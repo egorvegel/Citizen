@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск квартир</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="styleFlats.css">
+    <link rel="stylesheet" href="ion.rangeSlider.css">
+    <link href="../../favicon.ico" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+    <div class="container">
+        <!-- NAV -->
+        <nav class="nav">      
+            <div class="nav_wrapper">
+                <div class="nav_logo">
+                    <h3 class="nav_logo_title">Citizen</h3>
+                </div>
+                <ul class="nav_menu">
+                    <li class="nav_menu_link">          
+                        <a href="../../index.html"><i class="fas fa-building"></i>Главная</a>
+                    </li>
+                    <li class="nav_menu_link">
+                        <a href="../../html/project/project.html"><i class="fas fa-book"></i>Проект</a>
+                    </li>
+                    <li class="nav_menu_link">          
+                        <a href="flats.html"><i class="fas fa-hotel"></i>Квартиры</a>
+                    </li>
+                    <li class="nav_menu_link">
+                        <a href="../../html/contacts/contacts.html"><i class="far fa-envelope"></i>Контакты</a>
+                    </li>
+                    <li class="nav_menu_link">
+                        <a href="../../html/news/news.html"><i class="far fa-newspaper"></i>Новости</a>
+                    </li>
+                </ul>
+                <div class="nav_linkHide">
+                    <span class="nav_linkHide_line"></span>
+                </div>      
+            </div>
+            <div class="nav_linkShow">
+                <span class="nav_linkShow_line"></span>
+            </div>
+        </nav>
+        <!-- main -->
+        <main class="main">
+            <!-- aside -->
+                <aside class="main_number">
+                    <i class="fas fa-phone-alt"></i>
+                    <span class="main_number_call">Заказать обратный звонок</span>
+                </aside>
+                <header class="main_header">
+                    <div class="casing">
+                        <div class="main_header_title">
+                            <i class="far fa-newspaper"></i>
+                            <a href="#">Квартиры</a>
+                        </div>
+                    </div>
+                </header>
+                <div class="main_selection">
+                    <div class="casing">
+                        <h2 class="main_selection_title">ПОДБОР КВАРТИР ПО ПАРАМЕТРАМ</h2>
+                        <p class="main_selection_subtitle">Укажите интересующие для вас характеристики</p>
+                        <div class="parameter">
+                            <div class="parameter_item">
+                                <h2 class="parameter_item_title">Цена</h2>
+                                <input type="range" class="parameter_item_range">
+                            </div>
+                            <div class="parameter_item">
+                                <h2 class="parameter_item_title">Количество комнат</h2>
+                                <div class="option">
+                                    <label for="first" class="option_num">1</label> <br>
+                                    <label class="option_wrap"><input type="checkbox" class="option_checkbox" id="first"></label>
+                                </div>
+
+                                <div class="option">
+                                    <label for="second" class="option_num option_num--second">2</label>  <br>
+                                    <label class="option_wrap"><input type="checkbox" class="option_checkbox" id="second"></label>
+                                </div>
+                                <div class="option">
+                                    <label for="third" class="option_num option_num--third">3</label>   <br>
+                                    <label class="option_wrap"><input type="checkbox" class="option_checkbox" id="third"></label>
+                                </div>
+ 
+                            </div>
+                            <div class="parameter_item">
+                                <a href="#" class="parameter_item_link">Подобрать</a>
+                            </div>
+                        </div>
+
+                        <div class="argument">
+                            <div class="argument_item"><div class="wrap">Квартиры по вашему запросу: <strong class="argument_item_num">0</strong></div></div>
+                            <div class="argument_item">
+                                <div class="wrap">
+                                    Сортировать по :<br>
+                                    <select name="choose" id="choose" class="argument_item_select">
+                                        <option value="">Стоимости</option>
+                                        <option value="">Общей площади</option>
+                                        <option value="">Литеру</option>
+                                        <option value="">Этажу</option>
+                                    </select>
+                                    <select name="choose1" id="choose1" class="argument_item_select">
+                                        <option value="">Убыванию</option>
+                                        <option value="">Возрастанию</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="argument_item">
+                                <div class="wrap">
+                                    <a href="#" class="argument_item_link">Отсортировать</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="table_wrap">
+                            <table class="table">
+                                <tr class="table_gold">
+                                    <th>Литер</th>
+                                    <th>Этаж</th>
+                                    <th>Комнат</th>
+                                    <th>Площадь</th>
+                                    <th colspan="2">Стоимость</th>
+                                </tr>
+                                <tr class="table_grey" data-flat="1"> 
+                                    <th colspan="6">Однокомнатные квартиры</th>
+                                </tr>
+                                <tr class="table_normal">
+                                    <td data-liter-first>3</td>
+                                    <td data-floor-first>1</td>
+                                    <td data-room-first>1</td>
+                                    <td data-square-first>55.1</td>
+                                    <td data-pricing data-pricing-first>2 719 185 ₽</td >                              
+                                    <td><a href="#" class="table_normal_link">Забронировать</a></td>
+                                </tr>
+                                <tr class="table_normal">
+                                    <td data-liter-first>7</td>
+                                    <td data-floor-first>2</td>
+                                    <td data-room-first>1</td>
+                                    <td data-square-first>41.65</td>
+                                    <td data-pricing data-pricing-first>2 249 105 ₽</td>
+                                    <td><a href="#" class="table_normal_link">Забронировать</a></td>
+                                </tr>
+                                <tr class="table_normal">
+                                    <td data-liter-first>3</td>
+                                    <td data-floor-first>2</td>
+                                    <td data-room-first>1</td>
+                                    <td data-square-first>47.2</td>
+                                    <td data-pricing data-pricing-first>2 082 570 ₽</td>
+                                    <td><a href="#" class="table_normal_link">Забронировать</a></td>
+                                </tr>
+                                <tr class="table_normal">
+                                    <td data-liter-first>3</td>
+                                    <td data-floor-first>4</td>
+                                    <td data-room-first>1</td>
+                                    <td data-square-first>47.2</td>
+                                    <td data-pricing data-pricing-first>2 121 570 ₽</td>
+                                    <td><a href="#" class="table_normal_link">Забронировать</a></td>
+                                </tr>
+                                <tr class="table_normal">
+                                    <td data-liter-first>5</td>
+                                    <td data-floor-first>16</td>
+                                    <td data-room-first>1</td>
+                                    <td data-square-first>41.82</td>
+                                    <td data-pricing data-pricing-first>2 077 220 ₽</td>
+                                    <td><a href="#" class="table_normal_link">Забронировать</a></td>
+                                </tr>
+                                <tr class="table_normal">
+                                    <td data-liter-first>3</td>
+                                    <td data-floor-first>16</td>
+                                    <td data-room-first>1</td>
+                                    <td data-square-first>41.86</td>
+                                    <td data-pricing data-pricing-first>2 067 220 ₽</td>
+                                    <td><a href="#" class="table_normal_link">Забронировать</a></td>
+                                </tr>
+
+                                <tr class="table_grey" data-flat="2">
+                                    <th colspan="6">Двукомнатные квартиры</th>
+                                </tr>
+                                <tr class="table_normal">
+                                    <td data-liter data-liter-second>7</td>
+                                    <td data-floor data-floor-second>11</td>
+                                    <td data-room data-room-second>2</td>
+                                    <td data-square data-square-second>72.25</td>
+                                    <td data-pricing data-pricing-second>3 825 637 ₽</td >                              
+                                    <td><a href="#" class="table_normal_link">Забронировать</a></td>
+                                </tr>
+                                <tr class="table_normal">
+                                    <td data-liter data-liter-second>7</td>
+                                    <td data-floor data-floor-second>12</td>
+                                    <td data-room data-room-second>2</td>
+                                    <td data-square data-square-second>72.04</td>
+                                    <td data-pricing data-pricing-second>3 815 047 ₽</td>
+                                    <td><a href="#" class="table_normal_link">Забронировать</a></td>
+                                </tr>
+                                <tr class="table_normal">
+                                    <td data-liter data-liter-second>5</td>
+                                    <td data-floor data-floor-second>11</td>
+                                    <td data-room data-room-second>2</td>
+                                    <td data-square data-square-second>71.85</td>
+                                    <td data-pricing data-pricing-second>3 804 457 ₽</td>
+                                    <td><a href="#" class="table_normal_link">Забронировать</a></td>
+                                </tr>
+                                <tr class="table_normal">
+                                    <td data-liter data-liter-second>5</td>
+                                    <td data-floor data-floor-second>2</td>
+                                    <td data-room data-room-second>2</td>
+                                    <td data-square data-square-second>73.8</td>
+                                    <td data-pricing data-pricing-second>3 775 335 ₽</td>
+                                    <td><a href="#" class="table_normal_link">Забронировать</a></td>
+                                </tr>
+                                <tr class="table_normal">
+                                    <td data-liter data-liter-second>5</td>
+                                    <td data-floor data-floor-second>4</td>
+                                    <td data-room data-room-second>2</td>
+                                    <td data-square data-square-second>71.3</td>
+                                    <td data-pricing data-pricing-second>3 775 335 ₽</td>
+                                    <td><a href="#" class="table_normal_link">Забронировать</a></td>
+                                </tr>
+                                <tr class="table_normal">
+                                    <td data-liter data-liter-second>5</td>
+                                    <td data-floor data-floor-second>1</td>
+                                    <td data-room data-room-second>2</td>
+                                    <td data-square data-square-second>71.25</td>
+                                    <td data-pricing data-pricing-second>3 772 687 ₽</td>
+                                    <td><a href="#" class="table_normal_link">Забронировать</a></td>
+                                </tr>
+                                <tr class="table_normal">
+                                    <td data-liter data-liter-second>5</td>
+                                    <td data-floor data-floor-second>10</td>
+                                    <td data-room data-room-second>2</td>
+                                    <td data-square data-square-second>71.1</td>
+                                    <td data-pricing data-pricing-second>3 764 745 ₽</td>
+                                    <td><a href="#" class="table_normal_link">Забронировать</a></td>
+                                </tr>
+                                <tr class="table_normal">
+                                    <td data-liter data-liter-second>5</td>
+                                    <td data-floor data-floor-second>16</td>
+                                    <td data-room data-room-second>2</td>
+                                    <td data-square data-square-second>64.05</td>
+                                    <td data-pricing data-pricing-second>3 391 447 ₽</td>
+                                    <td><a href="#" class="table_normal_link">Забронировать</a></td>
+                                </tr>
+                                <tr class="table_normal">
+                                    <td data-liter data-liter-second>5</td>
+                                    <td data-floor data-floor-second>13</td>
+                                    <td data-room data-room-second>2</td>
+                                    <td data-square data-square-second>58.23</td>
+                                    <td data-pricing data-pricing-second>3 281 317 ₽</td>
+                                    <td><a href="#" class="table_normal_link">Забронировать</a></td>
+                                </tr>
+
+                                <tr class="table_grey" data-flat="3">
+                                    <th colspan="6">Трехкомнатные квартиры</th>
+                                </tr>
+                                <tr class="table_normal">
+                                    <td data-liter data-liter-third>3</td>
+                                    <td data-floor data-floor-third>3</td>
+                                    <td data-room data-room-third>3</td>
+                                    <td data-square data-square-third>88.64</td>
+                                    <td data-pricing data-pricing-third>3 999 096 ₽</td >                              
+                                    <td><a href="#" class="table_normal_link">Забронировать</a></td>
+                                </tr>
+                                <tr class="table_normal">
+                                    <td data-liter data-liter-third>3</td>
+                                    <td data-floor data-floor-third>6</td>
+                                    <td data-room data-room-third>3</td>
+                                    <td data-square data-square-third>82.1</td>
+                                    <td data-pricing data-pricing-third>3 706 815 ₽</td>
+                                    <td><a href="#" class="table_normal_link">Забронировать</a></td>
+                                </tr>
+                                <tr class="table_normal">
+                                    <td data-liter data-liter-third>3</td>
+                                    <td data-floor data-floor-third>13</td>
+                                    <td data-room data-room-third>3</td>
+                                    <td data-square data-square-third>82.1</td>
+                                    <td data-pricing data-pricing-third>3 901 497 ₽</td>
+                                    <td><a href="#" class="table_normal_link">Забронировать</a></td>
+                                </tr>
+                                <tr class="table_normal">
+                                    <td data-liter data-liter-third>3</td>
+                                    <td data-floor data-floor-third>7</td>
+                                    <td data-room data-room-third>3</td>
+                                    <td data-square data-square-third>82.1</td>
+                                    <td data-pricing data-pricing-third>3 871 215 ₽</td>
+                                    <td><a href="#" class="table_normal_link">Забронировать</a></td>
+                                </tr>                   
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <footer class="footer">
+                    <div class="footer_item">
+                        <h2 class="footer_item_title">Citizen</h2>
+                        <p class="footer_item_text">"Citizen" – модный город, который очень компактно и продумано вмещает в себя все элементы комфортного проживания. Жители смогут отдыхать в тихом и спокойном районе, рядом с которым есть все необходимое - школы, детские сады, спортивные центры, магазины. Современная архитектура и инфраструктура проекта призваны обеспечить жизнь на достойном уровне.</p>
+                        <p class="footer_item_text">Компания Citizen зарекомендовала себя как успешный девелопер на территории России. Строительство ведется на земле в собственности в соответствии с техническими регламентами и ФЗ-214.</p>
+                    </div>
+                    <address class="footer_item blocks">
+                        <div class="block">
+                                <h3 class="block_suptitle">Наши адреса</h3>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <strong class="block_b">Офис продаж</strong>
+                                <div class="block_subtitle"> Москва, ул. Фридриха Энгельса, 46</div> 
+                        </div>
+                        <div class="block">
+                            <h3 class="block_suptitle">	Мы работаем</h3>                <i class="fas fa-clock"></i>
+                            <strong class="block_b">с 9-00 до 19-00</strong>
+                            <div class="block_subtitle"> ежедневно</div> 
+                        </div>
+                        <div class="block">
+                            <h3 class="block_suptitle">	Справочная служба</h3>
+                            <i class="fas fa-phone-alt"></i>
+                            <strong class="block_b">8 800 355 20 60</strong>
+                            <div class="block_subtitle">звонок бесплатный из любого региона России                        </div> 
+                        </div>
+                        <div class="block">
+                            <h3 class="block_suptitle">	Написать нам</h3>
+                            <i class="far fa-envelope"></i>
+                            <strong class="block_b">eg.vegel@gmail.com</strong>               
+                        </div>
+                    </address>
+                </footer>
+                <div class="copyright">
+                    Egor Vegel
+                </div>
+        </main>
+    </div>
+
+    <div class="overlay unvisible"></div>
+    <div class="popUp unvisible">
+        <div class="popUp_title">Квартира</div>
+        <form action="2.php" class="popUp_form">
+            <input type="text" class="popUp_form_text " placeholder="Ваше имя">
+            <input type="text" class="popUp_form_text " placeholder="Ваш телефон">
+            <textarea name="text" id="text" class="popUp_form_text popUp_form_text--area" placeholder="Ваше сообщение"></textarea>
+            <input type="submit"  class="popUp_form_submit" value="Отправить">
+        </form>
+        <a href="#" class="popUp_close"></a>
+    </div>
+    <a href="#" class="btn_Up">&uarr;</a>
+
+    <script src="../../js/jquery-3.5.1.js"></script>
+    <script src="ion.rangeSlider.js"></script>
+    <script src="scriptFlats.js"></script>
+</body>
+</html>

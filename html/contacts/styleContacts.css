@@ -1,0 +1,151 @@
+.casing{
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+a{
+    color: #fff;
+}
+
+
+
+.main_header{
+    width: 100%;
+    min-height: 240px;
+    background: url('img/bg.jpg') center center no-repeat;
+    background-size: cover;
+    filter: grayscale(50%);
+}
+
+.main_header_title{
+    padding: 110px 15px 0;
+
+    color: #fff;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+
+
+.main_header_title a{
+    text-shadow:        2px 4px 3px rgba(0,0,0,0.8);
+}
+
+.main_info{
+    padding: 40px 0 0;
+}
+
+.main_info_title{
+    position: relative;
+    padding-left: 30px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.main_info_title::before{
+    content: '';
+    display: block;
+    width: 50px;
+    height:  50px;
+    border: 5px solid #f0c537;
+    border-radius: 50%;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+
+    position: absolute;
+    left: 0;
+    top: -5px;
+}
+
+.main_info_subtitle{
+    margin-bottom: 40px;
+    padding-left: 30px;
+    font-size: 15px;
+    color: #141213;
+}
+
+.main_info_par{
+    padding-bottom: 10px;
+}
+
+.office{
+    padding-top: 10px;
+}
+
+.office_item{
+    min-height: 310px;
+    padding: 20px 0 10px;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+
+.office_item_address{
+    width: 50%;
+    font-style: normal;
+}
+
+.office_item_title{
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.office_item_text{
+    margin: 15px 0;
+}
+
+.office_item_img{
+    float: right;
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+@media screen and (max-width: 1050px){
+    .office_item{
+        text-align: center;
+    }
+    .office_item_img{
+        float: none;
+    }
+    .office_item_address{
+        width: 100%;   
+    }
+    .office_item_title{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 700px){ 
+    .main_info_title, .main_info_subtitle{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .main_info_subtitle{
+        margin-bottom: 10px;
+    }
+    .main_info_title{
+        font-size: 25px;
+    }
+    .main_info_title::before{
+        width: 30px;
+        height: 30px;
+        left: -15px;
+    }
+
+    .office_item_title{
+        font-size: 25px;
+    }
+
+
+    .office_item_text{
+        margin: 5px 0;
+    }
+
+}
