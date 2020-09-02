@@ -133,7 +133,6 @@ $(function(){
                     flats[i][n].price = price[n].textContent.replace('₽', '');  
                 }
             }
-            console.log(price[i]);
 
 
 /*
@@ -149,7 +148,6 @@ $(function(){
             }else{
                 tableSortDown("[name=choose]", flats[i]);
             }
-            console.log(flats[i]);
 
             for(var k = 0; k < price.length; k++){  
                 liters[k].textContent = flats[i][k].liter;
