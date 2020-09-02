@@ -661,6 +661,13 @@ a {
 }
 .main .pluses .addition_slider .slick-arrow {
   color: #525a63;
+  transition: color linear 0.3s;
+}
+.main .pluses .addition_slider .slick-arrow:hover {
+  color: #ff7315;
+}
+.main .pluses .addition_slider .slick-arrow:active {
+  color: #ff3300;
 }
 .main .pluses .addition_slider .slick-dots {
   display: none !important;
@@ -681,10 +688,10 @@ a {
 .main .pluses .addition_slider .slider_content {
   width: 19%;
   z-index: -1;
-  border: 1px solid #ff3300;
   padding: 70px 50px;
   margin-top: 10%;
   margin-left: -1%;
+  background: #ebe6ff;
 }
 .main .pluses .addition_slider .slider_content_title {
   margin-bottom: 10px;
