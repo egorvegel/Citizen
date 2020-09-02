@@ -322,6 +322,8 @@ a{
             
             color: #fff;
             font-size: 35px;
+            
+
 
             .link();
             
@@ -666,7 +668,13 @@ a{
 
             .slick-arrow{
                 color: #525a63;
-                
+                transition: color linear 0.3s;
+                &:hover{
+                    color: @orange;
+                }
+                &:active{
+                    color: @red;
+                }
             }
 
             .slick-dots{
@@ -691,10 +699,10 @@ a{
                     width: 19%;
                     z-index: -1;
                    
-                    border: 1px solid #ff3300;
                     padding: 70px 50px;
                     margin-top: 10%;
                     margin-left: -1%;
+                    background: #ebe6ff;
                     &_title{
                         margin-bottom: 10px;
                         font-size: 30px;
